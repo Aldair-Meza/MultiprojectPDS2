@@ -1,0 +1,21 @@
+plugins {
+    id("com.github.johnrengelman.shadow") version "7.1.2"
+    id("io.micronaut.application") version "3.4.1"
+}
+
+version = "0.1"
+group = "co.com.poli.adminservice"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'de.codecentric:spring-boot-admin-starter-server'
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "de.codecentric:spring-boot-admin-dependencies:${springAdminVersion}"
+    }
+}

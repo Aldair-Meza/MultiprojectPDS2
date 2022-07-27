@@ -1,0 +1,7 @@
+micronaut:
+  application:
+    name: showtimeService
+netty:
+  default:
+    allocator:
+      max-order: 3

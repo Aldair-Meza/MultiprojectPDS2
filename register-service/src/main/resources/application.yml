@@ -1,0 +1,7 @@
+micronaut:
+  application:
+    name: registerService
+netty:
+  default:
+    allocator:
+      max-order: 3
